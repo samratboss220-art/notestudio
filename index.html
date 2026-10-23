@@ -9063,6 +9063,7 @@ var AK='nsAuthV1',PK='nsAiPrefsV1',CK='nsAiChatsV1',ST=window.__nsST||{};
 var DEF={tone:'balanced',format:'bullets',lang:'auto',detail:'medium',allowAI:true,saveChats:true};
 var configured=function(){return!!(C.supabaseUrl&&C.anonKey)};
 function jget(k,d){try{var v=JSON.parse(localStorage.getItem(k));return v==null?d:v}catch(e){return d}}
+            window.NS_BACKEND={googleClientId:"694607076537-9qne6ogtbdsch92li6deqq878ths1ifu.apps.googleusercontent.com",supabaseUrl:"",anonKey:"",aiFunction:"notewise",upgradeUrl:""};
 function jset(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){toast('Could not save: storage is full or blocked');return false}}
 function toast(m){if(typeof window.showToast==='function')window.showToast(m)}
 function h(t,a){var e=document.createElement(t);a=a||{};for(var k in a){if(k==='text')e.textContent=a[k];else if(k.slice(0,2)==='on')e.addEventListener(k.slice(2),a[k]);else e.setAttribute(k,a[k])}for(var i=2;i<arguments.length;i++){if(arguments[i]!=null)e.append(arguments[i])}return e}
